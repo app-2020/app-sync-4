@@ -4,6 +4,8 @@ app = Flask("example-2")
 
 @app.route("/")
 def serve_html():
-    return send_from_directory("html", filename = "index.html")
+    return send_from_directory(
+        "html",
+        filename = "index.html")
 
 app.run()
